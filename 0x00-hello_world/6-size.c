@@ -1,5 +1,9 @@
 #include<stdio.h>
 int main(void)
+ /**
+ * main - this is the main function of the code
+ * Return: 0
+ */
 {
 	char a;
 	int b;
