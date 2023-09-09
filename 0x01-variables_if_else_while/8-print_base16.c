@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints the numbers of base  from 0 to f
+ * main - prints the numbers of base 16 from 0 to f
  * Return: 0
 */
 int main(void)
