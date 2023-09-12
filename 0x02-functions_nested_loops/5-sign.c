@@ -4,7 +4,7 @@
  *
  *@n: checks input of fucnction
  *
- * Return: returns 1 if c is the number is postive 
+ * Return: returns 1 if c is the number is postive
  *	0 if its zero and -1 if it is negative
 */
 int print_sign(int n)
