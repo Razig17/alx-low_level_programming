@@ -4,7 +4,8 @@
  *
  *@n: checks input of fucnction
  *
- * Return: returns 1 if c is the number is postive 0 if its zero and -1 if it is negative
+ * Return: returns 1 if c is the number is postive 
+ *	0 if its zero and -1 if it is negative
 */
 int print_sign(int n)
 {
@@ -23,5 +24,5 @@ int print_sign(int n)
 	{
 		_putchar('0');
 		return (0);
-	}	
+	}
 }
