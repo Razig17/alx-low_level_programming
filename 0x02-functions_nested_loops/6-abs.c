@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - checks for lowercase character
+ * _abs - gives the absolute value of a number
  *
  *@a: checks input of fucnction
  *
