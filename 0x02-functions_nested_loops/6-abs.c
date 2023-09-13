@@ -2,17 +2,14 @@
 /**
  * _islower - checks for lowercase character
  *
- *@: checks input of fucnction
+ *@a: checks input of fucnction
  *
  * Return: returns the absolute value of a number
 */
-int _abs(int)
+int _abs(int a)
 {
-	int a;
-
 
 	if (a < 0)
-		return (a * -1);
-	else
-		return (a)
+		a = a * (-1);
+	return (a);
 }
