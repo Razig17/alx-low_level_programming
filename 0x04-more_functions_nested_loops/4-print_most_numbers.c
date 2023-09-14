@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_numbers - prints numbers from 0 to 9 using _putchar
+ * print_most_numbers - prints numbers from 0 to 9 using _putchar
  *			except 2 and 4
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i = 0;
 
