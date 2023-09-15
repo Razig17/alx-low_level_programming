@@ -2,7 +2,7 @@
 /**
  * print_line - draws a straight line
  *
- *@i:  input of fucnction
+ *@n:  input of fucnction
  *
 */
 void print_line(int n)
