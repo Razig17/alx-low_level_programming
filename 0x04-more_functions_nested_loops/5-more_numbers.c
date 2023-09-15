@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:0000/0000/0000/**
  *more_numbers - prints numbers from 0 to 14 ten times
  *
 */
@@ -12,10 +12,10 @@ void more_numbers(void)
 		for (int j = 0; j <= 14; j++)
 		{
 			if (j > 9)
-			_putchar(j + '0');
+			_putchar(1 + '0');
 	       _putchar((j % 10)  + '0');
 		}
 
 		_putchar('\n');
 	}
-
+}
