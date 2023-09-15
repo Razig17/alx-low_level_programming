@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * print_line - draws a straight line
+ * print_square - draws a square
  *
- *@n:  input of fucnction
+ *@size:  input of fucnction
  *
 */
-void print_line(int n)
+void print_square(int size)
 {
-	for (int k = n; k > 0; k--)
+	for (int k = size; k > 0; k--)
 	{
-		int j = n;
+		int j = size;
 		while (j > 0)
 		{
 			_putchar('#');
