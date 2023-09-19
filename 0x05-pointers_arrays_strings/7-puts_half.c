@@ -1,5 +1,5 @@
 #include "main.h"
-11;rgb:0000/0000/0000/**
+/**
  *puts_half - prints second half  of  a string, followed by a new line
  *
  *@str: the string
