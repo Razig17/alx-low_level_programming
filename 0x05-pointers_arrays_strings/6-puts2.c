@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *_puts2 - prints every other char of  a string, followed by a new line
+ *puts2 - prints every other char of  a string, followed by a new line
  *
  *@str: the string
  */
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i;
 	int len = -1;
