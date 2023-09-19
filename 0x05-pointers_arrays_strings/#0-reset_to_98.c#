@@ -1,7 +1,0 @@
-#include "main.h"
-/**
- * _isdigit - checks for digits
- *
- *@c: checks input of fucnction
-*/
-
