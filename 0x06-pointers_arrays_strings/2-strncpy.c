@@ -21,7 +21,7 @@ char *_strncpy(char *dest, char *src, int n)
 		if (*(src + j) == '\0')
 		break;
 		j++;
-		for ( ; i < n; i++)
+		for ( ; j < n; j++)
 			dest[i] = '\0';
 	}
 	return (dest);
