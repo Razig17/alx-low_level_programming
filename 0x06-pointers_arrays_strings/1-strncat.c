@@ -4,7 +4,7 @@
  *
  *@dest: destination string
  *@src: source string
- *
+ *@n: bits
  *Return: the pointer to dest
  *
  */
