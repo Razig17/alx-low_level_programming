@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ *string_toupper -changes all lowercase letters of a string to uppercase.
+ *
+ *@'': pointer to a string
+ *
+ *Return: string in uppercase
+ *
+ */
+
+
+char *string_toupper(char *)
+{
+	int i = 0, j = 0;
+
+	while (*(dest + i) != '\0')
+	{
+		i++;
+	}
+
+	while (j >= 0)
+	{
+		*(dest + i) = *(src + j);
+		if (*(src + j) == '\0')
+		break;
+		i++;
+		j++;
+	}
+	return (dest);
+}
