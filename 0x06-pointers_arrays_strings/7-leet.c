@@ -10,21 +10,25 @@
 
 char *leet(char *s)
 {
-	int key [] = {'a', 'e', 'o', 't', 'l'};
-	int value[] = {4, 3, 0, 7, 1};
-	int i;
-	int j;
+	int stringCount, leetCount;
+	char leetLetters[] = "aAeEoOtTlL";
+	char leetNums[] = "4433007711";
 
-	while (*(s + i) != '\0')
+
+	stringCount = 0;
+	while (s[stringCount] != '\0')
+
 	{
-		for (j = 0; j < 5; j++)
+		leetCount = 0;
+		while (leetCount < 10)
 		{
-			if ((s[i] == key[j]) || (s[i] == key[j] - 32))
+			if (leetLetters[leetCount] == s[stringCount])
 			{
-				*(s + i) = value[j] + 48;
+				s[stringCount] = leetNums[leetCount];
 			}
+			leetCount++;
 		}
-		i++;
+		stringCount++;
 	}
 	return (s);
 }

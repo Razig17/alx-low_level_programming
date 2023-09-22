@@ -19,8 +19,10 @@ char *leet(char *s)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if ((s[i] == key[j]) || (s[i] == key[j]- 32))
-			    *(s + i) = value[j] + 48;
+			if ((s[i] == key[j]) || (s[i] == key[j] - 32))
+			{
+				*(s + i) = value[j] + 48;
+			}
 		}
 		i++;
 	}
