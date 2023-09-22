@@ -2,13 +2,13 @@ include "main.h"
 /**
  *cap_string -capitalizes all words of a string.
  *
- *@c: pointer to a string
+ *@s: pointer to a string
  *
  *Return: string after modification
  *
  */
 
-char *cap_string(char *c)
+char *cap_string(char *s)
 {
 	int j, i;
 	int sofw[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
@@ -29,5 +29,5 @@ while (*(s + i) != '\0')
 	}
 		i++;
 }
-	return (c);
+	return (s);
 }
