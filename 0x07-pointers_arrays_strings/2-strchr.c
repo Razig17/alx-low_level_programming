@@ -1,5 +1,5 @@
 #include "main.h"
-11;rgb:0000/0000/0000/**
+/**
  *_strchr - a function locates a character in a string.
  *
  *@s: a pointer to an array
