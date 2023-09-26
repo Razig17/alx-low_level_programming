@@ -11,21 +11,23 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
+	unsigned int i, j, found;
 	unsigned int bytes = 0;
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; accept[j]; j++)
+		found = 0;
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 			{
 				bytes++;
-				break;
+				found = 1;
 			}
-			else if (accept[j] == '\0')
-				return (bytes);
+
 		}
+		if (found == 0)
+			return (bytes);
 	}
 	return (bytes);
 }
