@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *is_palindrome - findes is a string is palindrome
+ *is_pal - findes is a string is palindrome
  *@s: pointer to a string
  *@a: index of frist char
  *@z: index of last char
@@ -19,7 +19,7 @@ int is_palindrome(char *s)
 		return (is_pal(0, l - 1, s));
 }
 /**
-*is_pal - findes is a string is palindrome
+*is_palindrome - findes is a string is palindrome
 *@s: pointer to a string
 *@a: index of frist char
 *@z: index of last char
