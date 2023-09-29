@@ -19,7 +19,7 @@ int is_palindrome(char *s)
 
 int is_pal(int a , int z, char *s)
 {
-	if ((*(s + a) == *(s + z)) && (z >= a))
+	if (s[a] == s[z])
 		return (is_pal(a + 1, z - 1 , s));
 	else if (a > z)
 		return (1);
