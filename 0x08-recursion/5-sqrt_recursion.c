@@ -8,7 +8,7 @@
  *Return: returns natural square root of n or
  * (-1) if n dose not have a natural square
  */
-int sqrt(int n, int s);
+int mysqrt(int n, int s);
 
 
 int _sqrt_recursion(int n)
@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- *sqrt - finds the square root of a number
+ *mysqrt - finds the square root of a number
  *@n : the number
  *@s: the square root guess
  *Return: returns natural square root of n or.
@@ -25,12 +25,12 @@ int _sqrt_recursion(int n)
  */
 
 
-int sqrt(int n, int s)
+int mysqrt(int n, int s)
 {
 	if (s * s == n)
 		return (s);
 	else if (s * s < n)
-		return (sqrt(n, s + 1));
+		return (mysqrt(n, s + 1));
 	else
 		return (-1);
 }
