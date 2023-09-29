@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:0000/0000/0000/**
  *
  *
  *
@@ -14,7 +14,7 @@ int is_palindrome(char *s)
 	if (l <= 1)
 		return (1);
 	else
-		return (is_pal(0, l, s));
+		return (is_pal(0, l - 1, s));
 }
 
 int is_pal(int a , int z, char *s)
@@ -49,6 +49,5 @@ int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	else
 	return (1 + _strlen_recursion(s + 1));
 }
