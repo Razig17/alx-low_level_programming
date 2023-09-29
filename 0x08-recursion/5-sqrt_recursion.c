@@ -13,7 +13,7 @@ int mysqrt(int n, int s);
 
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1));
+	return (mysqrt(n, 1));
 }
 
 /**
