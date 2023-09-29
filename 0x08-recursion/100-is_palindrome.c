@@ -1,10 +1,12 @@
 #include "main.h"
 /**
- *
- *
- *
+ *is_palindrome - findes is a string is palindrome
+ *@s: pointer to a string
+ *@a: index of frist char
+ *@z: index of last char
+ *Return : returnes 1 if a string is a palindrome and 0 if not.
  */
-int is_pal(int a , int z, char *s);
+int is_pal(int a, int z, char *s);
 int _strlen_recursion(char *s);
 int is_palindrome(char *s)
 {
@@ -16,8 +18,16 @@ int is_palindrome(char *s)
 	else
 		return (is_pal(0, l - 1, s));
 }
+/**
+*is_pal - findes is a string is palindrome
+*@s: pointer to a string
+*@a: index of frist char
+*@z: index of last char
+*Return :returnes 1 if a string is a palindrome and 0 if not
+*/
 
-int is_pal(int a , int z, char *s)
+
+int is_pal(int a, int z, char *s)
 {
 	if (s[a] == s[z])
 		return (is_pal(a + 1, z - 1, s));
@@ -26,16 +36,6 @@ int is_pal(int a , int z, char *s)
 	else
 		return (0);
 }
-
-
-
-
-
-
-
-
-
-
 
 /**
  *_strlen_recursion - a function that returns the length of a string
