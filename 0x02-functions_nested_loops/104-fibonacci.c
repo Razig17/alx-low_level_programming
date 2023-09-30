@@ -1,5 +1,5 @@
 #include <stdio.h>
-11;rgb:0000/0000/0000/**
+/**
  *main -  prints the first 98 Fibonacci numbers
  *
  *Return: Always 0
