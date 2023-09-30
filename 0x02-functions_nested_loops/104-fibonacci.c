@@ -25,7 +25,7 @@ int main(void)
 	fib1_min = fib1 % 10000000000;
 	fib2_min = fib2 % 10000000000;
 
-	for (i = 92; i <= 98; i++)
+	for (i = 92; i < 98; i++)
 	{
 		half1 = fib1_max + fib2_max;
 		half2 = fib1_min + fib2_min;
@@ -35,9 +35,9 @@ int main(void)
 			half2 %= 10000000000;
 		}
 		printf("%lu%lu", half1, half2);
-		if (i != 98)
+		if (i != 97)
 			printf(", ");
-		else if (i == 98)
+		else if (i == 97)
 			printf("\n");
 		fib1_max = fib2_max;
 		fib1_min = fib2_min;
