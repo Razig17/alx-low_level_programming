@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i;
-	int temp;
-	int fib1 = 1;
-	int fib2 = 2;
+	unsigned int temp;
+	unsigned int fib1 = 1;
+	unsigned int fib2 = 2;
 
 	printf("%d, %d, ", fib1, fib2);
 	for (i = 2; i < 51; i++)
