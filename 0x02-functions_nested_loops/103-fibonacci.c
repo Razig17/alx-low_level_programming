@@ -18,7 +18,7 @@ int main(void)
 		temp = fib2;
 		fib2 = fib1 + fib2;
 		fib1 = temp;
-		if ((fib2 < 4000000) %% (fib2 % 2 == 0))
+		if ((fib2 < 4000000) && (fib2 % 2 == 0))
 		        sum += fib2;
 	}
 	printf("%d\n", sum);
