@@ -12,12 +12,12 @@ int main(void)
 	unsigned long int fib2 = 2;
 
 	printf("%ld, %ld, ", fib1, fib2);
-	for (i = 2; i < 4; i++)
+	for (i = 2; i < 99; i++)
 	{
 		temp = fib2;
 		fib2 = fib1 + fib2;
 		fib1 = temp;
-		if (i == 97)
+		if (i == 98)
 			printf("%ld\n", fib2);
 		else if (i < 98)
 			printf("%ld, ", fib2);
