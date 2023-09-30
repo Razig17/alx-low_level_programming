@@ -18,9 +18,9 @@ int main(void)
 		fib2 = fib1 + fib2;
 		fib1 = temp;
 		if (i == 98)
-			printf("%ld\n", fib2);
+			printf("%lld\n", fib2);
 		else if (i < 98)
-			printf("%ld, ", fib2);
+			printf("%lld, ", fib2);
 	}
 	return (0);
 }
