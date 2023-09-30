@@ -1,5 +1,5 @@
 #include <stdio.h>
-/**
+0;276;0c/**
  *main -  prints the first 98 Fibonacci numbers
  *
  *Return: Always 0
@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int fib2 = 2;
 
 	printf("%ld, %ld, ", fib1, fib2);
-	for (i = 3; i < 99; i++)
+	for (i = 3; i < 92; i++)
 	{
 		temp = fib2;
 		fib2 = fib1 + fib2;
