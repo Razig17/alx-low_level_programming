@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * times_table - prints the n times table
+ *print_times_table - prints the n times table
  *@n : the number
  *
 */
@@ -23,7 +23,7 @@ void print_times_table(int n)
 	prod = num * mult;
 
 	if (prod <= 99)
-	_putchar(' ');
+	_putchar('  ');
 	else if (prod <= 9)
 		_putchar(' ');
 	else
