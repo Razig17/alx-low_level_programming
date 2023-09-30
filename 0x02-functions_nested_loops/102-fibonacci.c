@@ -18,7 +18,7 @@ int main(void)
 		fib2 = fib1 + fib2;
 		fib1 = temp;
 		if (i == 50)
-		        printf("%d\n", fib2);
+	        	printf("%d\n", fib2);
 		else if (i < 50)
 			printf("%d, ", fib2);
 	}
