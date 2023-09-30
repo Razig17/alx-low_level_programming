@@ -1,5 +1,5 @@
 #include <stdio.h>
-11;rgb:0000/0000/0000/**
+/**
  *main -prints the sum of the even-valued terms in Fibonacci numbers
  * but only the terms under 4,000,000
  *Return: Always 0
