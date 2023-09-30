@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	long int k = 612852475143;
-	int i;
+	unsigned long int k = 612852475143;
+	long int i;
 
 	for (i = 2; i * i < k; i++)
 	{
@@ -16,6 +16,6 @@ int main(void)
 			k = k / i;
 		}
 	}
-	printf ("%d\n", k);
+	printf ("%lu\n", k);
 	return 0;
 }
