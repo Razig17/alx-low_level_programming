@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i;
-	unsigned int temp;
-	unsigned int fib1 = 1;
-	unsigned int fib2 = 2;
+	unsigned long int temp;
+	unsigned long int fib1 = 1;
+	unsigned long int fib2 = 2;
 
 	printf("%d, %d, ", fib1, fib2);
 	for (i = 2; i < 51; i++)
@@ -18,7 +18,7 @@ int main(void)
 		fib2 = fib1 + fib2;
 		fib1 = temp;
 		if (i == 50)
-	        	printf("%d\n", fib2);
+			printf("%d\n", fib2);
 		else if (i < 50)
 			printf("%d, ", fib2);
 	}
