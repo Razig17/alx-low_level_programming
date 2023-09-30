@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i;
-	unsigned long int temp;
-	unsigned long int fib1 = 1;
-	unsigned long int fib2 = 2;
+	unsigned long long int temp;
+	unsigned long long int fib1 = 1;
+	unsigned long long int fib2 = 2;
 
 	printf("%ld, %ld, ", fib1, fib2);
 	for (i = 3; i < 99; i++)
