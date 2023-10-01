@@ -14,5 +14,5 @@ void print_number(int n)
 	}
 	if ((n / 10) > 0)
 		print_number(n / 10);
-        putcahr ((num % 10) + '0');
+	_putcahr((num % 10) + '0');
 }
