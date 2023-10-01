@@ -26,11 +26,11 @@ int _strlen(char *s)
 
 void rev_string(char *s)
 {
-	int i,j;
+	int i, j;
 	int l;
-	char c[100];
+	char c[500];
 
-        l = _strlen(s);
+	l = _strlen(s);
 	j = l - 1;
 		for (i = 0; i < l; i++)
 			c[i] = s[i];
