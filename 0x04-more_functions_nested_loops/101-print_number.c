@@ -7,21 +7,12 @@
 */
 void print_number(int n)
 {
-	int j = n;
-
-	while (j > 0)
+	if (n < 0)
 	{
-		int i = 0;
-
-		while (i < n - j)
-		{
-			_putchar(' ');
-			i++;
-		}
-		_putchar('\\');
-		_putchar('\n');
-		j--;
+		n = -n;
+		_putchar('-');
 	}
-	if (n <= 0)
-	_putchar('\n');
+	if ((n / 10) > 0)
+		print_number(n / 10);
+        putcahr ((num % 10) + '0');
 }
