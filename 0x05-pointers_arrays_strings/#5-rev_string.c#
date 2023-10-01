@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:0000/0000/0000/**
  *_strlen -findes the length of a string
  *
  *@s: the string
@@ -28,9 +28,9 @@ void rev_string(char *s)
 {
 	int i,j;
 	int l;
-	char c[100];
 
         l = _strlen(s);
+
 	j = l - 1;
 		for (i = 0; i < l; i++)
 			c[i] = s[i];
