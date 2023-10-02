@@ -5,7 +5,7 @@
  *
  *@argc: number of command line  arguments
  *@argv: An array containing the program command line arguments
- *Return : always 0
+ *Return: always 0
  *
  */
 
