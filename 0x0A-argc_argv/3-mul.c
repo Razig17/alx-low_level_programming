@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints all arguments passed into it
+ * main - prints the multiplication of two arguments passed into it
  *
  *@argc: number of command line  arguments
  *@argv: arguments array
- *Return: always 1
+ *Return:  0 or 1
  *
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc == 3)
-		printf("%d\n", *argv * *(argv + 1));
-	else
+	{
+		printf("%d\n",atoi(*(argv + 1)) *atoi(*(argv + 2)));
+		return (0);
+	}
+        else
 		printf("Error\n");
 	return (1);
 }
