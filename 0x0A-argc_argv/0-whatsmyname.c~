@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ *_puts_recursion - a function that prints a string, followed by a new line.
+ *
+ *
+ *
+ */
+
+int main(int argc, char* argv[])
+{
+
+	printf("%S", argv[0]);
+	return (0);
+}
