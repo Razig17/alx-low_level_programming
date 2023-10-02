@@ -1,5 +1,5 @@
 #include <stdio.h>
-11;rgb:0000/0000/0000#include <stdlib.h>
+#include <stdlib.h>
 /**
  * main - prints all arguments passed into it
  *
