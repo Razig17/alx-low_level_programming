@@ -27,22 +27,22 @@ int main(int argc, char *argv[])
 		sum += n / 25;
 		n = n % 25;
 	}
-	else if ((n / 10 ) != 0)
+	 if ((n / 10 ) != 0)
 	{
 		sum += n / 10;
 		n = n % 10;
 	}
-	else if ((n / 5) != 0)
+	 if ((n / 5) != 0)
 	{
 		sum += n / 5;
 		n = n % 5;
 	}
-	else if ((n / 2) != 0)
+	 if ((n / 2) != 0)
 	{
 		sum += n / 2;
 		n = n % 2;
 	}
-	else if ((n / 1) != 0)
+	if ((n / 1) != 0)
 	{
 		sum += n / 1;
 	}
