@@ -12,14 +12,6 @@
 int main(int argc, char *argv[])
 {
 	int  n , sum = 0;
-	char *e;
-
-	e = argv[1];
-	if (e[1] == '-')
-	{
-		printf("0\n");
-		return (0);
-	}
 
 	if (argc != 2 )
 	{
