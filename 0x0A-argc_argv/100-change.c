@@ -17,16 +17,13 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (1);
-
 	}
-
 	n = atoi(argv[1]);
 	if (n < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-
 	if ((n / 25) != 0)
 	{
 		sum += n / 25;
