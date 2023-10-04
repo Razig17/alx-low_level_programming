@@ -28,17 +28,17 @@ int _strlen_recursion(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	unsigned int i, j, size1 , size2;
+	unsigned int i, j, size1, size2;
 
 	size1 = _strlen_recursion(s1);
 	size2 = _strlen_recursion(s2);
-	s = malloc(size1+size2 + 1);
+	s = malloc(size1 + size2 + 1);
 	if (s == 0)
 		return (NULL);
 	if (s1[0] == '0')
 		s1[0] = ' ';
-	 if (s2[0] == 0)
-		 s2[0] = ' ';
+	if (s2[0] =='0')
+		s2[0] = ' ';
 	i = 0;
 	while (i < size1)
 	{
