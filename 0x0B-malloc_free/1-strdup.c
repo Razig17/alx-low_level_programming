@@ -33,7 +33,7 @@ char *_strdup(char *str)
 	if (str == 0)
 		return (NULL);
 	size = _strlen_recursion(str);
-	s = malloc(sizeof(char) * size) - 1;
+	s = malloc(sizeof(char) * size - 1);
 	i = 0;
 	while (i < size)
 	{
