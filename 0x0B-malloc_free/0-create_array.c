@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+11;rgb:0000/0000/0000#include <stdlib.h>
 /**
  * create_array -creates an array of chars, and initializes it with a char.
  *
@@ -12,7 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *s;
-	int i;
+	unsigned int i;
 
 	if (size == 0 || s == 0)
 		return (NULL);
