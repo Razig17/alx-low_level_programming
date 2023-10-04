@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c#include <stdlib.h>
+#include <stdlib.h>
 /**
  *_strlen_recursion - a function that returns the length of a string
  *
