@@ -30,6 +30,10 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	unsigned int i, j, size1, size2;
 
+	if (s1[0] == NULL)
+		s1[0] = '\0';
+	if (s2[0] == NULL)
+		s2[0] = '\0';
 	size1 = _strlen_recursion(s1);
 	size2 = _strlen_recursion(s2);
 	s = malloc(size1 + size2 + 1);
