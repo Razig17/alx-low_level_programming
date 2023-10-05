@@ -8,26 +8,24 @@
  *
  * Return: NUll or pointer to the array.
  */
-
 int **alloc_grid(int width, int height)
 {
 	int i, j, k, l;
-	int **mat;
+	int **a;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	mat = malloc(height * sizeof(int));
+	mat = malloc(sizeof(int *) * height);
 	if (mat == NULL)
 	{
 		free(mat);
 		return (NULL);
-
 	}
 
 	for (i = 0; i < height; i++)
 	{
-		mat[i] = malloc(width * sizeof(int));
+		mat[i] = malloc(sizeof(int) * width);
 		if (mat[i] == NULL)
 		{
 			for (j = i; j >= 0; j--)
@@ -39,12 +37,10 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-
 	for (k = 0; k < height; k++)
 	{
 		for (l = 0; l < width; l++)
 			mat[k][l] = 0;
 	}
 	return (mat);
-
 }
