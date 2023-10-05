@@ -31,9 +31,9 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, size1, size2;
 
 	if (s1 == NULL)
-		s1[0] = '\0';
+		s1 = "\0";
 	if (s2 == NULL)
-		s2[0] = '\0';
+		s2 = "\0";
 	size1 = _strlen_recursion(s1);
 	size2 = _strlen_recursion(s2);
 	s = malloc(size1 + size2 + 1);
