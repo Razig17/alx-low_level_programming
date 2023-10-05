@@ -40,13 +40,13 @@ char *str_concat(char *s1, char *s2)
 	if (s == 0)
 		return (NULL);
 	i = 0;
-	while (i < size1 && s1[0] != 0)
+	while (i < size1)
 	{
 		s[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (i < size1 + size2 && s2[0] != 0)
+	while (i < size1 + size2)
 	{
 		s[i] = s2[j];
 		j++;
