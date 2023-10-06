@@ -27,7 +27,7 @@ int _strlen_recursion(char *s)
 char *argstostr(int ac, char **av)
 {
 	char *s;
-	unsigned int j, k = 0, size;
+        int j, k = 0, size = 0;
 	int i;
 
 	if (ac == 0 || av == NULL)
