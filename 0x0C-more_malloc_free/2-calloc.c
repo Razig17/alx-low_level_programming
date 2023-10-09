@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc - allocates memory using calloc
+ * _calloc - allocates memory using malloc
  *
  *@nmemb : number of block
  *@size : size of the block
@@ -12,11 +12,15 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *add;
+	unsigned int i;
 
-	add = calloc(nmemb, size);
-	if ((add == NULL) || (size == 0) || (nmemb == 0))
-	{
+	if (nmemb == 0 || size == 0)
+		return (0);
+	add = malloc(nmemb * size);
+	if (add == NULL)
 		return (NULL);
-	}
+
+	for (i = 0; i < nmemb * size; i++)
+		*(s + i) = 0;
 	return (add);
 }

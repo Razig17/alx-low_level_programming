@@ -37,10 +37,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "\0";
 	size1 = _strlen_recursion(s1);
 	size2 = _strlen_recursion(s2);
-	s = malloc(size1 + size2 + 1);
 
 	if (n > size2)
 		n = size2;
+	s = malloc(size1 + n + 1);
 	if (s == 0)
 		return (NULL);
 	i = 0;
