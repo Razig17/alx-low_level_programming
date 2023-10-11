@@ -23,6 +23,27 @@ int _strlen(char *s)
 }
 
 /**
+  * _strcpy - Copy a string
+  * @dest: Destination string 
+  * @src: Source string
+  *
+  * Return: the pointer to dest
+  */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; *(src + i) != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+
+	dest[i++] = '\0';
+
+	return (dest);
+}
+
+/**
  * new_dog-  creates new dog structure
  *
  * @name: Dog's name
@@ -44,14 +65,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 			return (NULL);
 		}
 		dog->owner = malloc(_strlen(owner) + 1);
-		if ( max_dog->owner == NULL)
+		if ( dog->owner == NULL)
 		{
 			free(dog->owner);
 			free(dog);
 			return ( NULL);
 		}
-		dog->name = *name;
-		dog->owner = *owner;
+		dog->name = _strcpy(dog->name, name);
+		dog->owner = _strcpy(dog->owner, owner);
 		dog->age = age;
 
 	}
