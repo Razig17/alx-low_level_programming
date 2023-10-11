@@ -56,7 +56,7 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog_n;
-	int name_len, owner_len;
+	int name_len = 0, owner_len = 0;
 
 	if (name && owner)
 	{
