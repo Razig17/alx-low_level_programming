@@ -4,8 +4,9 @@
  * struct dog - a structure
  * @name: name
  * @age: age
- * @owenr: owner
+ * @owner: owner
  *
+ * Description: contains dog's name age and owner.
  */
 
 struct dog
