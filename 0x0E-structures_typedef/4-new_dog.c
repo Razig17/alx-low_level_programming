@@ -50,31 +50,39 @@ char *_strcpy(char *dest, char *src)
  * @age: The age
  * @owner: Dog's owner
  *
+ * Return: poiner to new dog structure.
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog;
+	dog_t *dog_n;
+	int name_len, owner_len;
 
 	if (name && owner)
 	{
-		dog = malloc(_strlen(name) + 1);
-		if (dog == NULL)
+		name_len = _strlen(name) + 1;
+		owner_len = _strlen(owner) + 1;
+		dog_n = malloc(sizeof(dog_t));
+		if (dog_n == NULL)
+			return (NULL);
+		dog_n->name = malloc(sizeof(char) * name_len);
+
+		if (dog_n == NULL)
 		{
-			free(dog);
+			free(dog_n);
 			return (NULL);
 		}
-		dog->owner = malloc(_strlen(owner) + 1);
-		if (dog->owner == NULL)
+		dog_n->owner = malloc(owner_len * sizeof(char));
+		if (dog_n->owner == NULL)
 		{
-			free(dog->owner);
-			free(dog);
+			free(dog_n->owner);
+			free(dog_n);
 			return (NULL);
 		}
-		dog->name = _strcpy(dog->name, name);
-		dog->owner = _strcpy(dog->owner, owner);
-		dog->age = age;
+		dog_n->name = _strcpy(dog_n->name, name);
+		dog_n->owner = _strcpy(dog_n->owner, owner);
+		dog_n->age = age;
 
 	}
-	return (dog);
+	return (dog_n);
 }
