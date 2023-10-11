@@ -1,12 +1,12 @@
+#include <stdlib.h>
 #include "dog.h"
-#include <stdio.h>
 /**
  * free_dog - free a struct dog from memory
  *
  * @d: Dog structure
  */
 
-void free_dog(dog_t dog *d)
+void free_dog(dog_t *d)
 {
 	if (d != NULL)
 	{
