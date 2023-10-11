@@ -1,5 +1,5 @@
 #include "dog.h"
-11;rgb:0000/0000/0000#include <stdio.h>
+#include <stdio.h>
 /**
  * print_dog - prints a struct dog
  *
