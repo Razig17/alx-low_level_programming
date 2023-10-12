@@ -3,14 +3,13 @@
 #include "variadic_functions.h"
 
 /**
-  * sum_them_all - ...
+  * print_numbers - prints numbers
   *@n: numbers of parameters
-  *
-  *Return: sum of numbers given to it.
+  *@separator: the string to be printed between numbers
   *
   */
 
- void print_numbers(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list num;
@@ -21,10 +20,9 @@
 	{
 		printf("%d", va_arg(num, int));
 		if (separator != NULL && i < n - 1)
-			 printf("%s", separator);
+			printf("%s", separator);
 	}
 
-	 printf("\n");
+	printf("\n");
 	va_end(num);
-	return (sum);
 }
