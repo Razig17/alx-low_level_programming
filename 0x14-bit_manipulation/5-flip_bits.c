@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * flib_bits - Finds the number of bits needed to flip to get from
+  * flip_bits - Finds the number of bits needed to flip to get from
   * one number to another
   * @n: The first number
   * @m: The second number
