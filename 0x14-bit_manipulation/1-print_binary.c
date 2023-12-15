@@ -1,0 +1,35 @@
+#include "main.h"
+/**
+  * print_binary - Prints the binary representation of a number
+  * @n: The number to representing in binary
+  *
+  */
+void _to_binary(unsigned long int n);
+void print_binary(unsigned long int n)
+{
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
+	_divide(n);
+}
+
+/**
+  * _to_binary - converts a decimal number to binary
+  * @n: the number
+  *
+  */
+void _to_binary(unsigned long int n)
+{
+	if (n < 1)
+		return;
+
+	_to_binary(n >> 1);
+
+	if (n & 1)
+		_putchar('1');
+	else
+		_putchar('0');
+}
