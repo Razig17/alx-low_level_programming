@@ -1,10 +1,12 @@
 #include "main.h"
+void _to_binary(unsigned long int n);
+
 /**
   * print_binary - Prints the binary representation of a number
   * @n: The number to representing in binary
   *
   */
-void _to_binary(unsigned long int n);
+
 void print_binary(unsigned long int n)
 {
 	if (n == 0)
@@ -13,7 +15,7 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	_divide(n);
+	_to_binary(n);
 }
 
 /**
