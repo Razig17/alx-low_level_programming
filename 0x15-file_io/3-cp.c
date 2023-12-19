@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * main - Copies the contents of a file to another file.
  * @argc: The number of arguments supplied to the program.
