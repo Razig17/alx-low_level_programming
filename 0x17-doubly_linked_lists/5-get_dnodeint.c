@@ -6,7 +6,7 @@
  * @head: a pointer to thelist header
  * @index: node index
  *
- * Return: number of nodes.
+ * Return: the node at index.
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
