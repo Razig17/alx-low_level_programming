@@ -9,4 +9,7 @@ int binary_search(int *array, size_t size, int value);
 
 int jump_search(int *array, size_t size, int value);
 
+int interpolation_search(int *array, size_t size, int value);
+int interpolation_helper(int *array, size_t low, size_t high, int value);
+
 #endif /* SEARCH_ALGOS_H */
